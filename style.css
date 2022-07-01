@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Splash&family=Varela+Round&display=swap');
+
+body{
+    background-color: rgb(38, 39, 41);    
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Varela Round', sans-serif;
+   
+}
+
+.sticky{
+    position: sticky;
+    top: 0;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    min-height: 70px;
+    background-color: black;
+    color: azure;
+}
+
+nav ul li{
+    padding: 0 12px; 
+}
+
+nav ul li:hover{
+    color: rgb(181, 19, 7);   
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: rgb(181, 19, 7);
+}
+/* .brand:hover{
+    color: azure;
+} */
+.brand img{
+    width: 69px;
+    padding: 0 8px;
+}
+
+.container{
+    min-height: 70vh;
+    font-family: 'Josefin Sans', sans-serif;
+    color: azure;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 10px;
+    padding: 34px;
+    background: url(bg2.jpg);
+    background-size: 1000px auto;
+    background-repeat: no-repeat;
+}
+
+.bottom{
+    position: sticky;
+    height: 130px;
+    background-color: black;
+    color: azure; 
+    display: flex;
+    bottom : 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+}
+
+.icons{
+    margin-top: 15px;
+}
+
+.icons i{
+    margin: 10px;
+    cursor: pointer;
+}
+
+.icons i:hover{
+    color: rgb(181, 19, 7);   
+}
+
+.songItemContainer{
+    margin-top: 60px;
+}
+.songItem{
+     height: 50px;
+     display: flex;
+     background-color: rgb(181, 19, 7);
+     color: black;
+     margin: 12px 0;
+     justify-content: space-between;
+     align-items: center;
+     border-radius: 25px;
+}
+
+.songItem img{
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 30px;
+}
+
+.timestamp{
+    margin: 0 25px;
+    padding: 7px;
+}
+.timestamp i{
+    cursor: pointer;
+}
+.timestamp i:hover{
+     color: azure;
+}
+
+.songInfo{
+    font-family: 'Josefin Sans', sans-serif;
+    position: absolute;
+    left:10vw;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
